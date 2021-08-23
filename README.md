@@ -30,26 +30,26 @@ shell startup (e.g. .profile, .bashrc, etc.):
 source somepath/noita.sh
 ```
 
-Where *somepath* is the directory you have saved the script in. You will
-likely need to restart your session after making this change:
+Where `somepath` is the directory you have saved the script in. You will likely
+need to restart your session after making this change:
 
 ```
 exec bash
 ```
 
 Next, run the setup command to generate a config file for the script in
-*${HOME}/.noitaconfig*:
+`${HOME}/.noitaconfig`:
 
 ```
 noita-setup-config
 ```
 
-By default, worlds are saved to *%UserProfile%/Docuemnts/My Games/Noita*,
-however you may change this by adjusting the variables in *.noitaconfig*:
+By default, worlds are saved to `%UserProfile%/Docuemnts/My Games/Noita`,
+however you may change this by adjusting the variables in `.noitaconfig`:
 
 ```
-NOITA_BACKUPDIR_WORLDS # Change this variable to point to where you'd like your worlds saved.
-NOITA_SAVEDIR # Points to where Noita stores save data. You shouldn't need to touch this.
+NOITA_BACKUPDIR_WORLDS # Determines where worlds are saved.
+NOITA_SAVEDIR # Points to Noita's save data. You shouldn't need to touch this.
 ```
 
 # Use
@@ -70,9 +70,9 @@ Create a backup of a Noita world:
 noita-backup-world name source
 ```
 
-Where *name* is an optional friendly name you want for your world (defaults to
-"world"), and *source* is the specific Noita gameplay data you want to backup
-(defaults to the active Noita save, "save00").
+Where `name` is an optional friendly name you want for your world (defaults to
+`world`), and `source` is the specific Noita gameplay data you want to backup
+(defaults to the active Noita save, `save00`).
 
 ## Restore Worlds
 
@@ -82,9 +82,9 @@ Restore a previous backup of a Noita world:
 noita-restore-world name dest
 ```
 
-Where *name* is the required friendly name of the world you want to restore,
-and *dest* is the specific Noita gameplay data you want to restore over
-(defaults to the active Noita save, "save00").
+Where `name` is the required friendly name of the world you want to restore,
+and `dest` is the specific Noita gameplay data you want to restore over
+(defaults to the active Noita save, `save00`).
 
 ## Delete Backups
 
@@ -94,5 +94,5 @@ Delete a previous backup of a Noita world:
 noita-delete-world name
 ```
 
-Where *name* is the required friendly name of the world you want to delete. Be
+Where `name` is the required friendly name of the world you want to delete. Be
 careful, this action will delete your backup for good!
