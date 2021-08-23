@@ -74,6 +74,8 @@ Where `name` is an optional friendly name you want for your world (defaults to
 `world`), and `source` is the specific Noita gameplay data you want to backup
 (defaults to the active Noita save, `save00`).
 
+Sample use: `noita-backup-world really_good_perks`
+
 ## Restore Worlds
 
 Restore a previous backup of a Noita world:
@@ -86,6 +88,8 @@ Where `name` is the required friendly name of the world you want to restore,
 and `dest` is the specific Noita gameplay data you want to restore over
 (defaults to the active Noita save, `save00`).
 
+Sample use: `noita-restore-world really_good_perks`
+
 ## Delete Backups
 
 Delete a previous backup of a Noita world:
@@ -96,3 +100,5 @@ noita-delete-world name
 
 Where `name` is the required friendly name of the world you want to delete. Be
 careful, this action will delete your backup for good!
+
+Sample use: `noita-delete-world really_good_perks`
