@@ -44,7 +44,7 @@ Next, run the setup command to generate a config file for the script in
 noita-setup-config
 ```
 
-By default, worlds are saved to `%UserProfile%/Docuemnts/My Games/Noita`,
+By default, worlds are saved to `%UserProfile%/Documents/My Games/Noita`,
 however you may change this by adjusting the variables in `.noitaconfig`:
 
 ```
